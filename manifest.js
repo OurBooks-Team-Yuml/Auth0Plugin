@@ -1,5 +1,5 @@
 module.exports = {
-    version: '0.0.5',
+    version: '0.0.6',
     init: function (pluginContext) {
         pluginContext.registerPolicy(require('./policies/auth0policy.js'));
     },
