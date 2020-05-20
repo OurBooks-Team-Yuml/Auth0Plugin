@@ -1,13 +1,19 @@
 {
   "name": "express-gateway-plugin-auth0",
-  "version": "0.0.6",
-  "description": "",
+  "version": "1.0.0",
+  "description": "Package used to authorize user in your auth0 domain with access token",
   "main": "manifest.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Kaniak",
   "license": "ISC",
+  "keywords": ["free", "microservices", "microservice", "express-gateway", "plugins", "auth0"],
+  "homepage": "https://github.com/OurBooks-Team-Yuml/Auth0Plugin",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OurBooks-Team-Yuml/Auth0Plugin.git"
+  },
   "dependencies": {
     "node-fetch": "^2.6.0"
   }

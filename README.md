@@ -16,9 +16,18 @@ You can install plugin with following command:
 eg plugin install express-gateway-plugin-auth0
 ```
 
-This is ask you two questions. First if express gateway should add plugin to `system.config.yml`
-and second express gateway should add `auth0` policy to `gateway.config.yml`.
-In both cases you should answer as you want.
+This will ask you two following questions:
+```
+? Would you like to enable this plugin in system config? Yes/No
+? Would you like to add new policies to gateway config? Yes/No
+```
+
+If you answer `Yes` for first question it will populate your `system.config.yml`
+with the plugin configuration.
+If you answer `Yes` for second question it will add `auth0` policy to your policies
+in `gateway.config.yml` file.
+
+See point below to do it manually i.e. when you answer No for both questions.
 
 ### Manual installation
 First install plugin with following command
@@ -35,7 +44,7 @@ plugins:
 ```
 
 Next you should add the `auth0` policy to the `gateway.config.yml`. To do that you should
-add `auth0` policy to the policies:
+add `auth0` policy to your policies:
 
 ```yaml
 policies:
