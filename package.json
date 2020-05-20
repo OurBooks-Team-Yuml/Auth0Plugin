@@ -1,5 +1,5 @@
 {
-  "name": "auth0plugin",
+  "name": "express-gateway-plugin-auth0",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
