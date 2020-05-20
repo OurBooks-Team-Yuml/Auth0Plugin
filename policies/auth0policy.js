@@ -1,22 +1,26 @@
+const fetch = require("node-fetch");
+
 module.exports = {
     name: 'auth0',
     schema: {
-        $id: 'auth0.json',
-        type: 'object',
-        properties: {
-            message: {
-                type: 'string',
-                description: 'Message to show',
-                examples: ['This is a log message']
-            }
-        },
+        $id: "http://express-gateway.io/schemas/plugins/auth0.json"
     },
     policy: (actionParams) => {
         return (req, res, next) => {
-            console.log(req.headers)
-            console.log('executing policy-from-example-plugin with params', actionParams);
-            next()
+            const access_token = req.headers.authorization;
+
+            fetch('https://dev-b5gefs5h.eu.auth0.com/userinfo', {
+                headers: {
+                    "Authorization": access_token,
+                }
+            }).then(
+                res => res.json()
+            ).then(
+                res => {
+                    console.log(res.data)
+                    next()
+                }
+            )
         };
     }
 };
-  
