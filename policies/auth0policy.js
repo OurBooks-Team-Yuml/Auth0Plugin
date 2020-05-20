@@ -1,10 +1,5 @@
 module.exports = {
-    name: 'auth0-access-token',
-    schema: {
-        $id: 'http://express-gateway.io/schemas/policies/auth0.json',
-        type: 'object',
-        properties: {}
-    },
+    name: 'auth0',
     policy: (actionParams) => {
         return (req, res, next) => {
             console.log(req.headers)
