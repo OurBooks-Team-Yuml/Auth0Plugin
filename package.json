@@ -1,6 +1,6 @@
 {
   "name": "express-gateway-plugin-auth0",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Package used to authorize user in your auth0 domain with access token",
   "main": "manifest.js",
   "scripts": {

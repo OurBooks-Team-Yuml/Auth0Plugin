@@ -25,7 +25,7 @@ module.exports = {
             }).then(res => res.json()).catch(err => console.log(err))
 
             if (data !== undefined) {
-                req['user'] = data
+                req['user'] = JSON.stringify(data);
                 return next()
             }
 
