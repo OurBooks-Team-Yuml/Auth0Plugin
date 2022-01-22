@@ -15,6 +15,6 @@
     "url": "https://github.com/OurBooks-Team-Yuml/Auth0Plugin.git"
   },
   "dependencies": {
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^3.1.1"
   }
 }
